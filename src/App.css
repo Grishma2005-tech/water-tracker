@@ -1,0 +1,75 @@
+/* App.css */
+body {
+  font-family: sans-serif;
+  background: #e0f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+  padding: 6px;
+  width: 100px;
+  margin: 5px;
+}
+
+button {
+  padding: 6px 12px;
+  margin: 5px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  margin-bottom: 5px;
+}
+
+
+
+
+progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+progress.under-goal::-webkit-progress-value {
+  background-color: #3498db; /* Blue */
+}
+
+progress.met-goal::-webkit-progress-value {
+  background-color: #2ecc71; /* Green */
+}
+
+progress.over-goal::-webkit-progress-value {
+  background-color: #e74c3c; /* Red */
+}
